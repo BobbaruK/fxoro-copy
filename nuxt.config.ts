@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
   ],
   devtools: { enabled: true },
-  css: ["~/assets/scss/layers.scss", "~/assets/scss/main.scss"],
+  // css: [ "~/assets/scss/main.scss"],
   postcss: {
     plugins: {
       autoprefixer: {},

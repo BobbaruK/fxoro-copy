@@ -238,7 +238,7 @@ const langSwitchLabel: LangSwitchLabel = {
   </nav>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @layer components {
   .scssecoLanguageSwitcher {
     position: relative;

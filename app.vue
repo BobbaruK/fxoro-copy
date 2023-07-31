@@ -35,6 +35,34 @@ useCheckLang();
 </template>
 
 <style lang="scss">
+@layer reset;
+@layer layout;
+@layer base;
+@layer components;
+@layer utilities;
+
+@layer reset {
+  @import "./assets/scss/reset/index";
+}
+
+@layer layout {
+  @import "./assets/scss/layout/index";
+}
+
+@layer base {
+  @import "./assets/scss/base/index";
+}
+
+@layer components {
+  @import "./assets/scss/components/index";
+}
+
+@layer utilities {
+  @import "./assets/scss/utilities/index";
+}
+
+
+
 // body {
 //   background-color: #fff;
 // }
