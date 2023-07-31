@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as vars;
+
+// HTML styles
+html {
+  box-sizing: border-box;
+}
+
+// Universal styles
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 2px solid var(--clr-brandSecondaryColor);
+  outline-offset: 0px;
+  outline-style: dotted;
+}
+
+// Selection
+::selection {
+  color: var(--clr-brandPrimaryColor);
+  background: var(--clr-brandSecondaryColor);
+}
+
+// Body styles
+body {
+  background-color: var(--clr-white);
+  color: var(--clr-brandPrimaryColor-900);
+  font-family: vars.$fontFamily;
+  line-height: 1.5;
+  #__nuxt {
+    // overflow-x: hidden;
+  }
+}
+
+// Basic styles for sections
+section,
+header#header.siteHeader,
+footer#footer.siteFooter {
+  padding: var(--spacing) 0;
+}
+
+// Images
+img {
+  height: auto;
+  max-width: 100%;
+}

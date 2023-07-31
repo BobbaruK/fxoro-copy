@@ -1,0 +1,30 @@
+.scssecoBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0.5rem;
+
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+
+  background-color: var(--clr-white);
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-black);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &:disabled:hover {
+    background: var(--clr-gray-300);
+    color: var(--clr-gray-800);
+    cursor: not-allowed;
+  }
+}

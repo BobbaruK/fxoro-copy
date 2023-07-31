@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// BreakPoints
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$breakpoints_max_widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+// Grid system
+$columns: 12;
+$gap: 30px;
+
+$borderRadius: 0.3rem; // Border radius
+$typoSpacer: 1rem; // Typography space
+$animDur: 320ms; // Animation duration
+
+// Headings font size
+$fontSize: $typoSpacer;
+$fontSize-h1: $fontSize * 2.5;
+$fontSize-h2: $fontSize * 2;
+$fontSize-h3: $fontSize * 1.75;
+$fontSize-h4: $fontSize * 1.5;
+$fontSize-h5: $fontSize * 1.25;
+$fontSize-h6: $fontSize;
+
+// Font family
+$fontFamily-sansSerif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$fontFamily-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+$fontFamily-Rubik: "Rubik", sans-serif;
+$fontFamily-Montserrat: "Montserrat", sans-serif;
+$fontFamily: $fontFamily-Montserrat;

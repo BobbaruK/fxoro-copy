@@ -1,0 +1,14 @@
+.fallbackMsg {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+
+  .loader {
+    font-size: 170%;
+  }
+}
