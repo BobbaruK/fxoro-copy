@@ -41,46 +41,46 @@ watchOnce(burgerMenu, () => {
 <style lang="scss">
 @use "../../assets/scss/abstracts/mixins" as mxns;
 
-// @layer components {
-// }
-.menu-burger {
-  $menuBreakPoint: lg;
+@layer components {
+  .menu-burger {
+    $menuBreakPoint: lg;
 
-  align-items: flex-end;
-  background-color: var(--clr-brandSecondaryColor);
-  border-radius: var(--borderRadius);
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  height: 40px;
-  justify-content: space-around;
-  padding: 8px;
-  position: relative;
-  width: 40px;
-  z-index: 31;
-  @include mxns.mediamin($menuBreakPoint) {
-    display: none;
-  }
-  .bar {
-    background-color: var(--clr-black);
-    border-radius: 3px;
-    height: 3px;
-    width: 100%;
-    transition: width 320ms ease-in-out;
-    pointer-events: none;
-    &:first-child {
+    align-items: flex-end;
+    background-color: var(--clr-brandSecondaryColor);
+    border-radius: var(--borderRadius);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    justify-content: space-around;
+    padding: 8px;
+    position: relative;
+    width: 40px;
+    z-index: 31;
+    @include mxns.mediamin($menuBreakPoint) {
+      display: none;
     }
-    &:nth-child(2) {
-      width: 80%;
-    }
-    &:last-child {
-      width: 50%;
-    }
-  }
-  &.open {
     .bar {
+      background-color: var(--clr-black);
+      border-radius: 3px;
+      height: 3px;
       width: 100%;
+      transition: width 320ms ease-in-out;
+      pointer-events: none;
+      &:first-child {
+      }
+      &:nth-child(2) {
+        width: 80%;
+      }
+      &:last-child {
+        width: 50%;
+      }
+    }
+    &.open {
+      .bar {
+        width: 100%;
+      }
     }
   }
 }
