@@ -22,7 +22,7 @@
 </template>
 
 <style lang="scss">
-// @layer nuxtComponents {
+// @layer components {
 //   button {
 //     outline: 1px solid black;
 //     &::before {

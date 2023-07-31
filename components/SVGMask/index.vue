@@ -15,7 +15,7 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-@layer nuxtComponents {
+@layer components {
   .svgEncode {
     display: block;
     font-size: inherit;

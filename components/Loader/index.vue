@@ -88,7 +88,7 @@ switch (props.loader) {
 </template>
 
 <style lang="scss">
-@layer nuxtComponents {
+@layer components {
   .loader {
     align-items: center;
     display: flex;

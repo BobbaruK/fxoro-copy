@@ -41,7 +41,7 @@ watchOnce(burgerMenu, () => {
 <style lang="scss">
 @use "../../assets/scss/abstracts/mixins" as mxns;
 
-@layer nuxtComponents {
+@layer components {
   .menu-burger {
     $menuBreakPoint: lg;
 
