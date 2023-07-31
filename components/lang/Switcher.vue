@@ -239,78 +239,78 @@ const langSwitchLabel: LangSwitchLabel = {
 </template>
 
 <style lang="scss">
-// @layer components {
-// }
-.scssecoLanguageSwitcher {
-  position: relative;
-  &__activeLang,
-  &__language a {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 0.25rem;
-    justify-content: flex-start;
-  }
-  &__activeLang {
-    background: transparent;
-    border: 0;
-    padding-inline: 0.5rem 0;
-    padding-block: 0.5rem;
-    color: var(--clr-white);
+@layer components {
+  .scssecoLanguageSwitcher {
+    position: relative;
+    &__activeLang,
+    &__language a {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 0.25rem;
+      justify-content: flex-start;
+    }
+    &__activeLang {
+      background: transparent;
+      border: 0;
+      padding-inline: 0.5rem 0;
+      padding-block: 0.5rem;
+      color: var(--clr-white);
 
-    cursor: pointer;
-    img {
-      border-color: var(--clr-white);
+      cursor: pointer;
+      img {
+        border-color: var(--clr-white);
+      }
     }
-  }
-  &__languages {
-    transform-origin: top;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
-    margin: 1rem 0 0 0;
-    // overflow-x: hidden;
-    // overflow-y: auto;
-    overflow: hidden;
-    padding: 0.5rem;
-    position: absolute;
-    top: 80%;
-    width: 180px;
-    z-index: 1;
+    &__languages {
+      transform-origin: top;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 0.5rem;
+      margin: 1rem 0 0 0;
+      // overflow-x: hidden;
+      // overflow-y: auto;
+      overflow: hidden;
+      padding: 0.5rem;
+      position: absolute;
+      top: 80%;
+      width: 180px;
+      z-index: 1;
 
-    background-color: var(--clr-white);
-    // border-radius: 0.3rem;
-    border: 1px solid var(--clr-black);
-    box-shadow: 0px 3px 7px -2px hsla(var(--clr-brandPrimaryColor-hue), var(--clr-brandPrimaryColor-saturation), var(--clr-brandPrimaryColor-lightness), 0.75);
-    list-style: none;
-  }
-  &__language {
-    &.active {
+      background-color: var(--clr-white);
+      // border-radius: 0.3rem;
+      border: 1px solid var(--clr-black);
+      box-shadow: 0px 3px 7px -2px hsla(var(--clr-brandPrimaryColor-hue), var(--clr-brandPrimaryColor-saturation), var(--clr-brandPrimaryColor-lightness), 0.75);
+      list-style: none;
     }
-  }
-  &__languageLink {
-    align-content: center;
-    align-items: center;
-    color: var(--clr-black);
-    flex-direction: row;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: flex-start;
-    &.router-link-active,
-    &.router-link-exact-active {
-      font-weight: bold;
+    &__language {
+      &.active {
+      }
     }
-    &:hover {
+    &__languageLink {
+      align-content: center;
+      align-items: center;
       color: var(--clr-black);
+      flex-direction: row;
+      display: flex;
+      gap: 0.5rem;
+      justify-content: flex-start;
+      &.router-link-active,
+      &.router-link-exact-active {
+        font-weight: bold;
+      }
+      &:hover {
+        color: var(--clr-black);
+      }
     }
-  }
-  &__languageFlag {
-    border-radius: 50%;
-    border: 2px solid var(--clr-brandPrimaryColor);
-    height: 27px;
-    object-fit: cover;
-    width: 27px;
+    &__languageFlag {
+      border-radius: 50%;
+      border: 2px solid var(--clr-brandPrimaryColor);
+      height: 27px;
+      object-fit: cover;
+      width: 27px;
+    }
   }
 }
 </style>
