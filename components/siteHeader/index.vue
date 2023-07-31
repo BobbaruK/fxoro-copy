@@ -332,8 +332,9 @@ watchEffect(() => {
         <div class="row">
           <div class="col-12 siteHeader__topHeaderInner">
             <NuxtLink :to="localePath('/')" aria-label="Home">
-              <NuxtImg
-                src="/images/logos/logo-white.webp"
+              <nuxt-picture
+                format="avif,webp"
+                src="/images/logos/logo-white.png"
                 class="siteHeader__logo"
                 alt="Logo"
                 width="137"

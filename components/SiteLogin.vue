@@ -82,7 +82,7 @@ const user = useSupabaseUser();
         <span class="sr-only" id="userLogin__profileButton" :lang="locale">
           {{ t("profile") }}
         </span>
-        <nuxt-img
+        <img
           :src="user?.user_metadata.avatar_url"
           :alt="user.user_metadata.user_name"
           width="27"

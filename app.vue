@@ -35,6 +35,7 @@ useCheckLang();
 </template>
 
 <style lang="scss">
+// define layers here because if we define them in the file they will be scoped there
 @layer reset;
 @layer layout;
 @layer base;
@@ -60,8 +61,6 @@ useCheckLang();
 @layer utilities {
   @import "./assets/scss/utilities/index";
 }
-
-
 
 // body {
 //   background-color: #fff;

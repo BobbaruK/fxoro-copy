@@ -680,11 +680,12 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
             <p v-html="t('getOurApp')" />
             <div class="siteFooter__theApps">
               <div class="qr">
-                <img
+                <nuxt-picture
+                  format="avif,webp"
+                  src="/images/footer/social/qr-code.png"
                   alt="QR"
                   width="93"
                   height="93"
-                  src="https://i.ibb.co/fScYL8Z/qr-code.png"
                 />
               </div>
               <div class="google">
@@ -698,11 +699,12 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
                     :lang="locale"
                     v-html="t('getOurAppFromGoogle')"
                   />
-                  <img
+                  <nuxt-picture
+                    format="avif,webp"
+                    src="/images/footer/social/google-play.png"
                     alt="Google Play"
                     width="120"
                     height="36"
-                    src="https://i.ibb.co/gTwB0ND/google-play.png"
                   />
                 </a>
               </div>
@@ -717,27 +719,31 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
                     :lang="locale"
                     v-html="t('getOurAppFromApple')"
                   />
-                  <img
+                  <nuxt-picture
+                    format="avif,webp"
+                    src="/images/footer/social/apple-store.png"
                     alt="Apple Store"
                     width="120"
                     height="36"
-                    src="https://i.ibb.co/MGxqZhY/apple-icon-1.png"
                   />
                 </a>
               </div>
             </div>
-            <img
-              class="asRoma"
-              alt="AS Roma Logo"
+            <nuxt-picture
+              format="avif,webp"
+              src="/images/footer/social/logo-diff.png"
+              class="logo-diff"
+              alt="Logo"
               width="213"
               height="140"
-              src="https://fxoro.com/wp-content/themes/CSSecoStarterThemeV2-master/imgs/logodiffrfrumos.png"
             />
-            <img
-              class="investing"
+            <nuxt-picture
+              format="avif,webp"
+              src="/images/footer/social/logo-investing.png"
+              class="logo-investing"
               alt="investing"
-              style="max-width: 200px"
-              src="https://i.ibb.co/0jDv1H2/negativ-investing.png"
+              width="200"
+              height="57"
             />
           </div>
         </div>
@@ -756,33 +762,37 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 siteFooter__brandsInner">
-            <img
+            <nuxt-picture
+              format="avif,webp"
+              src="/images/footer/brands/bita.png"
               alt="Bita"
-              style="height: fit-content"
               height="30"
               width="83"
-              src="https://fxoro.com/wp-content/themes/CSSecoStarterThemeV2-master/imgs/footer/bita.png"
+              style="height: fit-content"
             />
-            <img
+            <nuxt-picture
+              format="avif,webp"
+              src="/images/footer/brands/refinitiv.png"
               alt="REFINITIV"
-              style="height: fit-content"
               height="30"
               width="83"
-              src="https://fxoro.com/wp-content/themes/CSSecoStarterThemeV2-master/imgs/footer/refinitiv.png"
-            />
-            <img
-              alt="LSEG"
               style="height: fit-content"
+            />
+            <nuxt-picture
+              format="avif,webp"
+              src="/images/footer/brands/lseg.png"
+              alt="LSEG"
               height="30"
               width="114"
-              src="https://fxoro.com/wp-content/themes/CSSecoStarterThemeV2-master/imgs/footer/lseg.png"
-            />
-            <img
-              alt="Cboe"
               style="height: fit-content"
+            />
+            <nuxt-picture
+              format="avif,webp"
+              src="/images/footer/brands/cboe.png"
+              alt="Cboe"
               height="30"
               width="79"
-              src="https://fxoro.com/wp-content/themes/CSSecoStarterThemeV2-master/imgs/footer/cboe2.png"
+              style="height: fit-content"
             />
           </div>
         </div>
@@ -917,15 +927,15 @@ footer#footer {
       font-weight: bold;
     }
 
-    img.asRoma,
-    img.investing {
+    .logo-diff,
+    .logo-investing {
       grid-column-start: 1;
       grid-column-end: 3;
       align-self: center;
       justify-self: center;
     }
 
-    img.asRoma {
+    .logo-diff {
       @include mxns.mediamin(sm) {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -941,7 +951,7 @@ footer#footer {
         grid-row-start: 1;
       }
     }
-    img.investing {
+    .logo-investing {
       @include mxns.mediamin(sm) {
         grid-column-start: 2;
         grid-column-end: 3;
