@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss">
-@layer components {
+@layer nuxtComponents {
   .scssecoBadge {
     --badge-padding-x: 0.5em;
     --badge-padding-y: 0.25em;

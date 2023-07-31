@@ -107,7 +107,7 @@ const user = useSupabaseUser();
 </template>
 
 <style lang="scss">
-@layer components {
+@layer nuxtComponents {
   .userLogin {
     &__userLogged,
     &__profileLink {

@@ -239,7 +239,7 @@ const langSwitchLabel: LangSwitchLabel = {
 </template>
 
 <style lang="scss">
-@layer components {
+@layer nuxtComponents {
   .scssecoLanguageSwitcher {
     position: relative;
     &__activeLang,
