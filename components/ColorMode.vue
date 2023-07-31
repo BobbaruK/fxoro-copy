@@ -22,18 +22,18 @@
 </template>
 
 <style lang="scss">
-@layer components {
-  button {
-    outline: 1px solid black;
-    &::before {
-      content: "ColorMode - ";
-    }
-  }
+// @layer components {
+//   button {
+//     outline: 1px solid black;
+//     &::before {
+//       content: "ColorMode - ";
+//     }
+//   }
 
-  html[theme="dark"] {
-    button {
-      outline: 1px solid red;
-    }
-  }
-}
+//   html[theme="dark"] {
+//     button {
+//       outline: 1px solid red;
+//     }
+//   }
+// }
 </style>

@@ -88,34 +88,34 @@ switch (props.loader) {
 </template>
 
 <style lang="scss">
-@layer components {
-  .loader {
-    align-items: center;
-    display: flex;
-    // font-size: 90px;
-    font-size: inherit;
-    // height: 100%;
-    height: auto;
-    justify-content: center;
-    max-height: 100%;
-    max-width: 100%;
-    // width: 100%;
-    width: auto;
-  }
-  .loaderIcon {
+// @layer components {
+// }
+.loader {
+  align-items: center;
+  display: flex;
+  // font-size: 90px;
+  font-size: inherit;
+  // height: 100%;
+  height: auto;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+  // width: 100%;
+  width: auto;
+}
+.loaderIcon {
+  display: block;
+  font-size: inherit;
+  height: 1em;
+  width: 1em;
+  span {
+    background-color: currentColor;
     display: block;
-    font-size: inherit;
-    height: 1em;
-    width: 1em;
-    span {
-      background-color: currentColor;
-      display: block;
-      height: inherit;
-      mask-image: var(--svg);
-      mask-repeat: no-repeat;
-      mask-size: 100% 100%;
-      width: inherit;
-    }
+    height: inherit;
+    mask-image: var(--svg);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    width: inherit;
   }
 }
 </style>

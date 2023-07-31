@@ -15,21 +15,21 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-@layer components {
-  .svgEncode {
+// @layer components {
+// }
+.svgEncode {
+  display: block;
+  font-size: inherit;
+  height: 1em;
+  width: 1em;
+  span {
+    background-color: currentColor;
     display: block;
-    font-size: inherit;
     height: 1em;
+    mask-image: var(--svg);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
     width: 1em;
-    span {
-      background-color: currentColor;
-      display: block;
-      height: 1em;
-      mask-image: var(--svg);
-      mask-repeat: no-repeat;
-      mask-size: 100% 100%;
-      width: 1em;
-    }
   }
 }
 </style>

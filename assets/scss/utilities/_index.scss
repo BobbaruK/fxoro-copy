@@ -1,4 +1,4 @@
-@import "./display";
-@import "./offset";
-@import "./order";
-@import "./sr-only";
+@forward "./display";
+@forward "./offset";
+@forward "./order";
+@forward "./sr-only";

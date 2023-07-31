@@ -107,24 +107,24 @@ const user = useSupabaseUser();
 </template>
 
 <style lang="scss">
-@layer components {
-  .userLogin {
-    &__userLogged,
-    &__profileLink {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      gap: 0.3rem;
-    }
-    &__userAvatar {
-      border: 2px solid var(--clr-white);
-      border-radius: 50%;
-    }
-    &__profileLink {
-      color: var(--clr-white);
-    }
+// @layer components {
+// }
+.userLogin {
+  &__userLogged,
+  &__profileLink {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  &__userAvatar {
+    border: 2px solid var(--clr-white);
+    border-radius: 50%;
+  }
+  &__profileLink {
+    color: var(--clr-white);
   }
 }
 </style>
