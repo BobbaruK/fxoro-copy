@@ -143,9 +143,9 @@ export default defineNuxtConfig({
     langDir: "lang",
   },
   googleFonts: {
-    download: false,
-    preconnect: true,
-    display: "swap",
+    // download: false,
+    // preconnect: true,
+    // display: "swap",
     families: {
       Montserrat: {
         wght: [300, 400, 600, 700],

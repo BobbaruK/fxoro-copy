@@ -682,6 +682,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
               <div class="qr">
                 <nuxt-picture
                   format="avif,webp"
+                  loading="lazy"
                   src="/images/footer/social/qr-code.png"
                   alt="QR"
                   width="93"
@@ -701,6 +702,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
                   />
                   <nuxt-picture
                     format="avif,webp"
+                    loading="lazy"
                     src="/images/footer/social/google-play.png"
                     alt="Google Play"
                     width="120"
@@ -721,6 +723,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
                   />
                   <nuxt-picture
                     format="avif,webp"
+                    loading="lazy"
                     src="/images/footer/social/apple-store.png"
                     alt="Apple Store"
                     width="120"
@@ -731,6 +734,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
             </div>
             <nuxt-picture
               format="avif,webp"
+              loading="lazy"
               src="/images/footer/social/logo-diff.png"
               class="logo-diff"
               alt="Logo"
@@ -739,6 +743,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
             />
             <nuxt-picture
               format="avif,webp"
+              loading="lazy"
               src="/images/footer/social/logo-investing.png"
               class="logo-investing"
               alt="investing"
@@ -764,6 +769,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
           <div class="col-12 siteFooter__brandsInner">
             <nuxt-picture
               format="avif,webp"
+              loading="lazy"
               src="/images/footer/brands/bita.png"
               alt="Bita"
               height="30"
@@ -772,6 +778,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
             />
             <nuxt-picture
               format="avif,webp"
+              loading="lazy"
               src="/images/footer/brands/refinitiv.png"
               alt="REFINITIV"
               height="30"
@@ -780,6 +787,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
             />
             <nuxt-picture
               format="avif,webp"
+              loading="lazy"
               src="/images/footer/brands/lseg.png"
               alt="LSEG"
               height="30"
@@ -788,6 +796,7 @@ const telegramSVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
             />
             <nuxt-picture
               format="avif,webp"
+              loading="lazy"
               src="/images/footer/brands/cboe.png"
               alt="Cboe"
               height="30"
