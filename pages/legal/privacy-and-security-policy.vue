@@ -1620,6 +1620,26 @@ useSeoMeta({
 });
 useCheckLang();
 
+// const route = useRoute();
+// console.log(route.fullPath);
+
+const url = useRequestURL();
+
+const currentUrl = url.href; // https://example.com:3000/hello-world
+const protocol = url.protocol; // https:
+const host = url.host; // example.com:3000
+const hostname = url.hostname; // example.com
+const pathname = url.pathname; // /hello-world.
+
+console.log(`${protocol}${host}${pathname}`);
+
+useHead({
+  link: [
+    { rel: "preconnect", href: `${protocol}${host}${pathname}` },
+    { rel: "dns-prefetch", href: `${protocol}${host}${pathname}` },
+  ],
+});
+
 /**
  * logic
  */

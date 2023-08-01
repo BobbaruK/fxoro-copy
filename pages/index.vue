@@ -12,7 +12,6 @@ useSeoMeta({
     "Home Page - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatum saepe beatae sequi sed excepturi temporibus reiciendis unde veritatis veniam?",
 });
 useCheckLang();
-
 </script>
 
 <template>

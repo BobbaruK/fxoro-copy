@@ -26,6 +26,8 @@ useHead({
 });
 
 useCheckLang();
+
+// TODO: work on page speed
 </script>
 
 <template>

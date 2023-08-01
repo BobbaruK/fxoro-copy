@@ -45,9 +45,6 @@ class LanguageSwitcher {
     }
   }
 
-  // TODO: scale shit
-  // scale e mai bun decat height -> mai bun de animat
-  // la fel si la mobil
   setLangMenuAnimation(): void {
     gsap.set(languageNavigationEl.value, useDropDownAnimations.set());
     openCloseTL.to(languageNavigationEl.value, useDropDownAnimations.open());
