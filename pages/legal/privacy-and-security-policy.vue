@@ -1620,6 +1620,7 @@ useSeoMeta({
   description: t("seo.metaDescription"),
   ogTitle: `${t("seo.metaTitle")} | FXORO`,
   ogDescription: t("seo.metaDescription"),
+  ogUrl: `${protocol}//${host}${pathname}`,
   twitterTitle: `${t("seo.metaTitle")} | FXORO`,
   twitterDescription: t("seo.metaDescription"),
 });

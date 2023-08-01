@@ -15,7 +15,7 @@ useSeoMeta({
   ogDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatum saepe beatae sequi sed excepturi temporibus reiciendis unde veritatis veniam?",
   ogImage: "/ogImage.jpg",
-  ogUrl: `${protocol}//${host}${pathname}`,
+  ogUrl: "",
   twitterTitle: "FXORO Copy",
   twitterDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatum saepe beatae sequi sed excepturi temporibus reiciendis unde veritatis veniam?",
