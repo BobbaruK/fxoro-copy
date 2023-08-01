@@ -1628,8 +1628,8 @@ useCheckLang();
 
 useHead({
   link: [
-    { rel: "preconnect", href: `${protocol}//${host}${pathname}` },
     { rel: "dns-prefetch", href: `${protocol}//${host}${pathname}` },
+    { rel: "preconnect", href: `${protocol}//${host}${pathname}` },
   ],
 });
 
