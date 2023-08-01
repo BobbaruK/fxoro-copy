@@ -25,101 +25,101 @@ useSeoMeta({
 
 useHead({
   link: [
-    // {
-    //   rel: "icon",
-    //   type: "image/png",
-    //   href: "/favicon.ico",
-    // },
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon.ico",
+    },
+    {
+      rel: "preload",
+      href: `/images/logos/logo-white.png`,
+      as: "image",
+    },
     // {
     //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/logos/logo-white.png`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
     //   href: `/images/logos/logo-white.avif`,
+    //   as: "image",
     // },
     // {
     //   rel: "preload",
-    //   as: "image",
     //   href: `/images/logos/logo-white.webp`,
-    // },
-    // {
-    //   rel: "preload",
     //   as: "image",
-    //   href: `/images/flags/ar.svg`,
     // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/de.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/en.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/es.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/fi.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/hu.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/it.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/ms.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/pl.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/pt.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/ro.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/sv.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/th.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/tr.svg`,
-    // },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `/images/flags/vi.svg`,
-    // },
+    {
+      rel: "preload",
+      href: `/images/flags/ar.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/de.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/en.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/es.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/fi.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/hu.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/it.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/ms.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/pl.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/pt.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/ro.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/sv.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/th.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/tr.svg`,
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: `/images/flags/vi.svg`,
+      as: "image",
+    },
   ],
 });
 
