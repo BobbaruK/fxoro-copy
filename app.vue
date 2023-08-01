@@ -30,11 +30,11 @@ useHead({
       type: "image/png",
       href: "/favicon.ico",
     },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/logos/logo-white.png`,
-    },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/logos/logo-white.png`,
+    // },
     // {
     //   rel: "preload",
     //   as: "image",
@@ -45,81 +45,81 @@ useHead({
     //   as: "image",
     //   href: `${protocol}//${host}/images/logos/logo-white.webp`,
     // },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/ar.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/de.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/en.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/es.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/fi.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/hu.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/it.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/ms.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/pl.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/pt.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/ro.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/sv.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/th.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/tr.svg`,
-    },
-    {
-      rel: "preload",
-      as: "image",
-      href: `${protocol}//${host}/images/flags/vi.svg`,
-    },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/ar.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/de.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/en.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/es.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/fi.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/hu.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/it.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/ms.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/pl.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/pt.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/ro.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/sv.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/th.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/tr.svg`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/flags/vi.svg`,
+    // },
   ],
 });
 
