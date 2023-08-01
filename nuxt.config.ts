@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@nuxtjs/supabase",
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
+    "nuxt-purgecss",
   ],
   devtools: { enabled: true },
   // css: [ "~/assets/scss/main.scss"],
@@ -25,8 +26,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  image: {
+    provider: "netlify",
+  },
   i18n: {
-    /* module options */
     strategy: "prefix_except_default",
     defaultLocale: "en",
     vueI18n: "./i18n.config.ts",
@@ -152,7 +155,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  image: {
-    provider: "netlify",
+  purgecss: {
+    enabled: true, // Always enable purgecss
   },
 });
