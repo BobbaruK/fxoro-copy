@@ -30,11 +30,11 @@ useHead({
       type: "image/png",
       href: "/favicon.ico",
     },
-    // {
-    //   rel: "preload",
-    //   as: "image",
-    //   href: `${protocol}//${host}/images/logos/logo-white.png`,
-    // },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/logos/logo-white.png`,
+    },
     // {
     //   rel: "preload",
     //   as: "image",
