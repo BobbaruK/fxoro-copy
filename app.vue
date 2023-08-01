@@ -33,7 +33,7 @@ useHead({
     {
       rel: "preload",
       as: "image",
-      href: `${protocol}//${host}/images/logos/logo-white.png`,
+      href: `/images/logos/logo-white.png`,
     },
     // {
     //   rel: "preload",
