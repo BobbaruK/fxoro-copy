@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
     "nuxt-purgecss",
+    "@vite-pwa/nuxt",
   ],
   devtools: { enabled: true },
   // css: [ "~/assets/scss/main.scss"],
@@ -156,6 +157,21 @@ export default defineNuxtConfig({
     },
   },
   purgecss: {
-    enabled: true, // Always enable purgecss
+    // enabled: true, // Always enable purgecss
+  },
+  pwa: {
+    /* your pwa options */
+    manifest: {
+      name: "SCSSeco's FXORO Copy",
+      short_name: "FXORO Copy",
+      description: "SCSSeco's FXORO Copy for portfolio",
+    },
+    workbox: {
+      navigateFallback: "/",
+    },
+    devOptions: {
+      enabled: true,
+      type: "module",
+    },
   },
 });
