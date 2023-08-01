@@ -1631,7 +1631,7 @@ const host = url.host; // example.com:3000
 const hostname = url.hostname; // example.com
 const pathname = url.pathname; // /hello-world.
 
-console.log(`${protocol}${host}${pathname}`);
+console.log(`${protocol}//${host}${pathname}`);
 
 useHead({
   link: [
