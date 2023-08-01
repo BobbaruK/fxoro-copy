@@ -1,4 +1,12 @@
 <script setup lang="ts">
+// TODO: make a composable
+const url = useRequestURL();
+const currentUrl = url.href; // https://example.com:3000/hello-world
+const protocol = url.protocol; // https:
+const host = url.host; // example.com:3000
+const hostname = url.hostname; // example.com
+const pathname = url.pathname; // /hello-world.
+
 useSeoMeta({
   title: "FXORO Copy",
   description:
@@ -7,7 +15,7 @@ useSeoMeta({
   ogDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatum saepe beatae sequi sed excepturi temporibus reiciendis unde veritatis veniam?",
   ogImage: "/ogImage.jpg",
-  ogUrl: "http://localhost:3000/",
+  ogUrl: `${protocol}//${host}${pathname}`,
   twitterTitle: "FXORO Copy",
   twitterDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatum saepe beatae sequi sed excepturi temporibus reiciendis unde veritatis veniam?",
@@ -21,6 +29,96 @@ useHead({
       rel: "icon",
       type: "image/png",
       href: "/favicon.ico",
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/logos/logo-white.png`,
+    },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/logos/logo-white.avif`,
+    // },
+    // {
+    //   rel: "preload",
+    //   as: "image",
+    //   href: `${protocol}//${host}/images/logos/logo-white.webp`,
+    // },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/ar.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/de.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/en.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/es.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/fi.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/hu.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/it.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/ms.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/pl.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/pt.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/ro.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/sv.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/th.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/tr.svg`,
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: `${protocol}//${host}/images/flags/vi.svg`,
     },
   ],
 });

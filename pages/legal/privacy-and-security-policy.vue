@@ -1604,7 +1604,13 @@ const { t, locale } = useI18n({
   },
 });
 
-const tt = {};
+// TODO: make a composable
+const url = useRequestURL();
+const currentUrl = url.href; // https://example.com:3000/hello-world
+const protocol = url.protocol; // https:
+const host = url.host; // example.com:3000
+const hostname = url.hostname; // example.com
+const pathname = url.pathname; // /hello-world.
 
 /**
  * seo
@@ -1614,26 +1620,15 @@ useSeoMeta({
   description: t("seo.metaDescription"),
   ogTitle: `${t("seo.metaTitle")} | FXORO`,
   ogDescription: t("seo.metaDescription"),
-  ogUrl: "http://localhost:3000/",
   twitterTitle: `${t("seo.metaTitle")} | FXORO`,
   twitterDescription: t("seo.metaDescription"),
 });
 useCheckLang();
 
-// TODO: make a composable
-const url = useRequestURL();
-const currentUrl = url.href; // https://example.com:3000/hello-world
-const protocol = url.protocol; // https:
-const host = url.host; // example.com:3000
-const hostname = url.hostname; // example.com
-const pathname = url.pathname; // /hello-world.
-
-console.log(`${protocol}//${host}${pathname}`);
-
 useHead({
   link: [
-    { rel: "preconnect", href: `${protocol}${host}${pathname}` },
-    { rel: "dns-prefetch", href: `${protocol}${host}${pathname}` },
+    { rel: "preconnect", href: `${protocol}//${host}${pathname}` },
+    { rel: "dns-prefetch", href: `${protocol}//${host}${pathname}` },
   ],
 });
 
