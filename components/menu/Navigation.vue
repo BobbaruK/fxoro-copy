@@ -113,11 +113,7 @@ class SiteNavigation {
     target.setAttribute("aria-expanded", "true");
 
     gsap.to(subMenuTween, {
-      // height: "auto",
-      // opacity: 1,
       ...useDropDownAnimations.open(),
-      // duration: animationDuration,
-      // ease: animationEase,
       ...gsapTimelineDefaults(),
     });
     gsap.to(caret, {
@@ -141,11 +137,7 @@ class SiteNavigation {
     target.setAttribute("aria-expanded", "false");
 
     gsap.to(subMenuTween, {
-      // height: 0,
-      // opacity: 0,
       ...useDropDownAnimations.set(),
-      // duration: animationDuration,
-      // ease: animationEase,
       ...gsapTimelineDefaults(),
     });
     gsap.to(caret, {

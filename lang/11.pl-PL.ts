@@ -1,66 +1,23 @@
+import navigation_PL from "../translations/navigation/11.pl-PL.navigation";
+
+import header_PL from "../translations/header/11.pl-PL.header";
+import footer_PL from "../translations/footer/11.pl-PL.footer";
+
+import privacyAndSecurityPolicy_Translation_PL from "../translations/pages/legal/privacy-and-security-policy/11.pl-PL.privacy-and-security-policy";
+
 export default defineI18nLocale(async (locale) => {
-  const navMenu = {
-    home: "Strona główna",
-
-    cfds: "Kontrakty CFD",
-    forex: "Forex",
-    shares: "Akcje",
-    commodities: "Surowce",
-    indices: "Indeksy",
-    cryptocurrencies: "Kryptowaluty",
-    etfs: "ETF-y",
-
-    investing: "Inwestowanie",
-    realShares: "Prawdziwe akcje",
-
-    tradingCenter: "Centrum handlowe",
-    tradingInfo: "Informacje o handlu",
-    tradingConditions: "Warunki handlowe",
-    accounts: "Konta",
-    professionalAccounts: "Konta dla profesjonalistów",
-    islamicAccounts: "Konta islamskie",
-    faq: "FAQ",
-    educationDivider: "Edukacja",
-    basicCourse: "Podstawowy kurs",
-    inDepthCourses: "Zaawansowane kursy",
-    eBook: "E-book",
-    glossary: "Słownik",
-    webminars: "Webinary",
-
-    tools: "Narzędzia",
-    digitalIdentityVerification: "Weryfikacja tożsamości cyfrowej",
-    mt4: "MT4",
-    tradingCentralDivider: "Centrum handlowe",
-    tradingCentral: "Centrum handlowe",
-    marketAnalysisDivider: "Analiza rynku",
-    marginCalculatorTool: "Kalkulator marży",
-    economicCalendar: "Kalendarz ekonomiczny",
-    news: "Wiadomości",
-    signals: "Sygnały",
-
-    company: "Firma",
-    aboutUs: "O nas",
-    whyFxoro: "Dlaczego FXORO",
-    affiliation: "Afiliacja",
-    events: "Wydarzenia",
-    contactUs: "Kontakt",
-    newsAndUpdates: "Wiadomości o instrumentach finansowych",
-    blog: "Blog",
-
-    legal: "Prawne",
-    privacyAndSecurityPolicy: "Polityka prywatności i bezpieczeństwa",
-    termsOfUse: "Warunki korzystania",
-    riskWarningNotice: "Ostrzeżenie o ryzyku",
-    regulations: "Regulacje",
-    termsAndConditions: "Warunki i zasady",
-    conflictOfInterest: "Konflikt interesów",
-    supportingDocuments: "Dokumenty wsparcia",
-    keyInformationDocumentKid: "Kluczowe informacje (KID)",
+  return {
+    navigation: {
+      ...navigation_PL(),
+    },
+    header: {
+      ...header_PL(),
+    },
+    footer: {
+      ...footer_PL(),
+    },
+    privacyAndSecurityPolicy: {
+      ...privacyAndSecurityPolicy_Translation_PL(),
+    },
   };
-
-  const output = {
-    ...navMenu,
-  };
-
-  return output;
 });

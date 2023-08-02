@@ -1,66 +1,23 @@
+import navigation_HU from "../translations/navigation/12.hu-HU.navigation";
+
+import header_HU from "../translations/header/12.hu-HU.header";
+import footer_HU from "../translations/footer/12.hu-HU.footer";
+
+import privacyAndSecurityPolicy_Translation_HU from "../translations/pages/legal/privacy-and-security-policy/12.hu-HU.privacy-and-security-policy";
+
 export default defineI18nLocale(async (locale) => {
-  const navMenu = {
-    home: "Kezdőlap",
-
-    cfds: "CFD-k",
-    forex: "Forex",
-    shares: "Részvények",
-    commodities: "Árucikkek",
-    indices: "Indexek",
-    cryptocurrencies: "Kriptovaluták",
-    etfs: "ETF-ek",
-
-    investing: "Befektetés",
-    realShares: "Valódi részvények",
-
-    tradingCenter: "Kereskedési központ",
-    tradingInfo: "Kereskedési információ",
-    tradingConditions: "Kereskedési feltételek",
-    accounts: "Számlák",
-    professionalAccounts: "Profi számlák",
-    islamicAccounts: "Iszlám számlák",
-    faq: "GYIK",
-    educationDivider: "Oktatás",
-    basicCourse: "Alapkurzus",
-    inDepthCourses: "Mélyreható kurzusok",
-    eBook: "E-könyv",
-    glossary: "Glosszár",
-    webminars: "Webináriumok",
-
-    tools: "Eszközök",
-    digitalIdentityVerification: "Digitális azonosítás ellenőrzése",
-    mt4: "MT4",
-    tradingCentralDivider: "Kereskedési központ",
-    tradingCentral: "Kereskedési központ",
-    marketAnalysisDivider: "Piaci elemzés",
-    marginCalculatorTool: "Margin kalkulátor eszköz",
-    economicCalendar: "Gazdasági naptár",
-    news: "Hírek",
-    signals: "Jelzések",
-
-    company: "Cég",
-    aboutUs: "Rólunk",
-    whyFxoro: "Miért FXORO",
-    affiliation: "Kapcsolat",
-    events: "Események",
-    contactUs: "Kapcsolatfelvétel",
-    newsAndUpdates: "Hírek pénzügyi eszközökről",
-    blog: "Blog",
-
-    legal: "Jogi",
-    privacyAndSecurityPolicy: "Adatvédelmi és biztonsági irányelvek",
-    termsOfUse: "Felhasználási feltételek",
-    riskWarningNotice: "Kockázati figyelmeztetés",
-    regulations: "Szabályozások",
-    termsAndConditions: "Általános feltételek",
-    conflictOfInterest: "Érdekellentét",
-    supportingDocuments: "Támogató dokumentumok",
-    keyInformationDocumentKid: "Kulcsfontosságú információs dokumentumok (KIDs)",
+  return {
+    navigation: {
+      ...navigation_HU(),
+    },
+    header: {
+      ...header_HU(),
+    },
+    footer: {
+      ...footer_HU(),
+    },
+    privacyAndSecurityPolicy: {
+      ...privacyAndSecurityPolicy_Translation_HU(),
+    },
   };
-
-  const output = {
-    ...navMenu,
-  };
-
-  return output;
 });

@@ -2,305 +2,223 @@
 import { useWindowSize } from "@vueuse/core";
 import { MenuItemsT } from "../../types/navMenuTypes";
 
-const { t, locale } = useI18n({
-  useScope: "global",
-  messages: {
-    en: {
-      skipToMainContent: "Skip to main content",
-      loadingUserActions: "Loading user actions...",
-    },
-    it: {
-      skipToMainContent: "Vai al contenuto principale",
-      loadingUserActions: "Caricamento azioni utente...",
-    },
-    tr: {
-      skipToMainContent: "Ana içeriğe atla",
-      loadingUserActions: "Kullanıcı eylemleri yükleniyor...",
-    },
-    ro: {
-      skipToMainContent: "Sari la conținutul principal",
-      loadingUserActions: "Se încarcă acțiunile utilizatorului...",
-    },
-    ar: {
-      skipToMainContent: "انتقل إلى المحتوى الرئيسي",
-      loadingUserActions: "جاري تحميل إجراءات المستخدم...",
-    },
-    de: {
-      skipToMainContent: "Zum Hauptinhalt springen",
-      loadingUserActions: "Benutzeraktionen werden geladen...",
-    },
-    es: {
-      skipToMainContent: "Ir al contenido principal",
-      loadingUserActions: "Cargando acciones del usuario...",
-    },
-    sv: {
-      skipToMainContent: "Hoppa till huvudinnehållet",
-      loadingUserActions: "Laddar användaråtgärder...",
-    },
-    pt: {
-      skipToMainContent: "Saltar para o conteúdo principal",
-      loadingUserActions: "Carregando ações do usuário...",
-    },
-    fi: {
-      skipToMainContent: "Siirry pääsisältöön",
-      loadingUserActions: "Ladataan käyttäjän toimintoja...",
-    },
-    pl: {
-      skipToMainContent: "Przejdź do głównej treści",
-      loadingUserActions: "Ładowanie działań użytkownika...",
-    },
-    hu: {
-      skipToMainContent: "Ugrás a fő tartalomra",
-      loadingUserActions: "Felhasználói műveletek betöltése...",
-    },
-    th: {
-      skipToMainContent: "ข้ามไปยังเนื้อหาหลัก",
-      loadingUserActions: "กำลังโหลดการดำเนินการของผู้ใช้...",
-    },
-    ms: {
-      skipToMainContent: "Langkau ke kandungan utama",
-      loadingUserActions: "Memuatkan tindakan pengguna...",
-    },
-    vi: {
-      skipToMainContent: "Chuyển đến nội dung chính",
-      loadingUserActions: "Đang tải hành động người dùng...",
-    },
-  },
-});
-
-// {
-//   en: "Profile";
-//   it: "";
-//   tr: "";
-//   ro: "";
-//   ar: "";
-//   de: "";
-//   es: "";
-//   sv: "";
-//   pt: "";
-//   fi: "";
-//   pl: "";
-//   hu: "";
-//   th: "";
-//   ms: "";
-//   vi: "";
-// }
+const { t, locale } = useI18n();
 const menuItems = ref<MenuItemsT>({
   home: {
     route: "/",
-    routeLabel: "home",
+    routeLabel: "navigation.home",
   },
   cfds: {
     route: "/cfds",
-    routeLabel: "cfds",
+    routeLabel: "navigation.cfds",
     children: {
       forex: {
         route: "/cfds/forex",
-        routeLabel: "forex",
+        routeLabel: "navigation.forex",
       },
       shares: {
         route: "/cfds/shares",
-        routeLabel: "shares",
+        routeLabel: "navigation.shares",
       },
       commodities: {
         route: "/cfds/commodities",
-        routeLabel: "commodities",
+        routeLabel: "navigation.commodities",
       },
       indices: {
         route: "/cfds/indices",
-        routeLabel: "indices",
+        routeLabel: "navigation.indices",
       },
       cryptocurrencies: {
         route: "/cfds/cryptocurrencies",
-        routeLabel: "cryptocurrencies",
+        routeLabel: "navigation.cryptocurrencies",
       },
       etfs: {
         route: "/cfds/etfs",
-        routeLabel: "etfs",
+        routeLabel: "navigation.etfs",
       },
     },
   },
   investing: {
     route: "/investing",
-    routeLabel: "investing",
+    routeLabel: "navigation.investing",
     children: {
       realShares: {
         route: "/investing/real-shares",
-        routeLabel: "realShares",
+        routeLabel: "navigation.realShares",
       },
     },
   },
   tradingCenter: {
     route: "/trading-center",
-    routeLabel: "tradingCenter",
+    routeLabel: "navigation.tradingCenter",
     children: {
       tradingInfo: {
         route: "/trading-center/trading-info",
-        routeLabel: "tradingInfo",
+        routeLabel: "navigation.tradingInfo",
       },
       tradingConditions: {
         route: "/trading-center/trading-conditions",
-        routeLabel: "tradingConditions",
+        routeLabel: "navigation.tradingConditions",
       },
       accounts: {
         route: "/trading-center/accounts",
-        routeLabel: "accounts",
+        routeLabel: "navigation.accounts",
       },
       professionalAccounts: {
         route: "/trading-center/professional-accounts",
-        routeLabel: "professionalAccounts",
+        routeLabel: "navigation.professionalAccounts",
       },
       islamicAccounts: {
         route: "/trading-center/islamic-account",
-        routeLabel: "islamicAccounts",
+        routeLabel: "navigation.islamicAccounts",
       },
       faq: {
         route: "/trading-center/faq",
-        routeLabel: "faq",
+        routeLabel: "navigation.faq",
       },
       educationDivider: {
         divider: true,
         route: "#",
-        routeLabel: "educationDivider",
+        routeLabel: "navigation.educationDivider",
         class: "divider",
       },
       basicCourse: {
         route: "/trading-center/basic-course",
-        routeLabel: "basicCourse",
+        routeLabel: "navigation.basicCourse",
       },
       inDepthCourses: {
         route: "/trading-center/in-depth-courses",
-        routeLabel: "inDepthCourses",
+        routeLabel: "navigation.inDepthCourses",
       },
       eBook: {
         route: "/trading-center/e-book",
-        routeLabel: "eBook",
+        routeLabel: "navigation.eBook",
       },
       glossary: {
         route: "/trading-center/glossary",
-        routeLabel: "glossary",
+        routeLabel: "navigation.glossary",
       },
       webminars: {
         route: "/trading-center/webminars",
-        routeLabel: "webminars",
+        routeLabel: "navigation.webminars",
       },
     },
   },
   tools: {
     route: "/tools",
-    routeLabel: "tools",
+    routeLabel: "navigation.tools",
     children: {
       digitalIdentityVerification: {
         route: "/tools/digital-identity-verification",
-        routeLabel: "digitalIdentityVerification",
+        routeLabel: "navigation.digitalIdentityVerification",
       },
       mt4: {
         route: "/tools/mt4",
-        routeLabel: "mt4",
+        routeLabel: "navigation.mt4",
       },
       tradingCentralDivider: {
         divider: true,
         route: "#",
-        routeLabel: "tradingCentralDivider",
+        routeLabel: "navigation.tradingCentralDivider",
         class: "divider",
       },
       tradingCentral: {
         route: "/tools/trading-central",
-        routeLabel: "tradingCentral",
+        routeLabel: "navigation.tradingCentral",
       },
       marketAnalysisDivider: {
         divider: true,
         route: "#",
-        routeLabel: "marketAnalysisDivider",
+        routeLabel: "navigation.marketAnalysisDivider",
         class: "divider",
       },
       marginCalculatorTool: {
         route: "/tools/margin-calculator-tool",
-        routeLabel: "marginCalculatorTool",
+        routeLabel: "navigation.marginCalculatorTool",
       },
       economicCalendar: {
         route: "/tools/economic-calendar",
-        routeLabel: "economicCalendar",
+        routeLabel: "navigation.economicCalendar",
       },
       news: {
         route: "/tools/news",
-        routeLabel: "news",
+        routeLabel: "navigation.news",
       },
       signals: {
         route: "/tools/signals",
-        routeLabel: "signals",
+        routeLabel: "navigation.signals",
       },
     },
   },
   company: {
     route: "/company",
-    routeLabel: "company",
+    routeLabel: "navigation.company",
     children: {
       aboutUs: {
         route: "/company/about-us",
-        routeLabel: "aboutUs",
+        routeLabel: "navigation.aboutUs",
       },
       whyFxoro: {
         route: "/company/why-fxoro",
-        routeLabel: "whyFxoro",
+        routeLabel: "navigation.whyFxoro",
       },
       affiliation: {
         route: "/company/affiliation",
-        routeLabel: "affiliation",
+        routeLabel: "navigation.affiliation",
       },
       events: {
         route: "/company/events",
-        routeLabel: "events",
+        routeLabel: "navigation.events",
       },
       contactUs: {
         route: "/company/contact-us",
-        routeLabel: "contactUs",
+        routeLabel: "navigation.contactUs",
       },
       newsAndUpdates: {
         route: "/company/news-and-updates",
-        routeLabel: "newsAndUpdates",
+        routeLabel: "navigation.newsAndUpdates",
       },
       blog: {
         route: "/company/blog",
-        routeLabel: "blog",
+        routeLabel: "navigation.blog",
       },
     },
   },
   legal: {
     route: "/legal",
-    routeLabel: "legal",
+    routeLabel: "navigation.legal",
     children: {
       privacyAndSecurityPolicy: {
         route: "/legal/privacy-and-security-policy",
-        routeLabel: "privacyAndSecurityPolicy",
+        routeLabel: "navigation.privacyAndSecurityPolicy",
       },
       termsOfUse: {
         route: "/legal/terms-of-use",
-        routeLabel: "termsOfUse",
+        routeLabel: "navigation.termsOfUse",
       },
       riskWarningNotice: {
         route: "/legal/risk-warning-notice",
-        routeLabel: "riskWarningNotice",
+        routeLabel: "navigation.riskWarningNotice",
       },
       regulations: {
         route: "/legal/regulations",
-        routeLabel: "regulations",
+        routeLabel: "navigation.regulations",
       },
       termsAndConditions: {
         route: "#",
-        routeLabel: "termsAndConditions",
+        routeLabel: "navigation.termsAndConditions",
       },
       conflictOfInterest: {
         route: "#",
-        routeLabel: "conflictOfInterest",
+        routeLabel: "navigation.conflictOfInterest",
       },
       supportingDocuments: {
         route: "/legal/supporting-documents",
-        routeLabel: "supportingDocuments",
+        routeLabel: "navigation.supportingDocuments",
       },
       keyInformationDocumentKid: {
         route: "/legal/key-information-document-kid",
-        routeLabel: "keyInformationDocumentKid",
+        routeLabel: "navigation.keyInformationDocumentKid",
       },
     },
   },
@@ -325,7 +243,7 @@ watchEffect(() => {
 <template>
   <header id="header" class="siteHeader">
     <a href="#mainContent" class="siteHeader__skipLink" :lang="locale">
-      {{ t("skipToMainContent") }}
+      {{ t("header.a11y.skipToMainContent") }}
     </a>
     <div class="siteHeader__topHeader">
       <div class="container-fluid">
@@ -346,7 +264,7 @@ watchEffect(() => {
                 <!-- this will be rendered on server side -->
                 <div class="fallbackMsg">
                   <Loader :loader="'oval'" />
-                  {{ t("loadingUserActions") }}
+                  {{ t("header.misc.loadingUserActions") }}
                 </div>
               </template>
               <div class="siteHeader__userActions" v-if="!isMobile">

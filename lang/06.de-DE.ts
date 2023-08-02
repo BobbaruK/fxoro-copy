@@ -1,66 +1,23 @@
+import navigation_DE from "../translations/navigation/06.de-DE.navigation";
+
+import header_DE from "../translations/header/06.de-DE.header";
+import footer_DE from "../translations/footer/06.de-DE.footer";
+
+import privacyAndSecurityPolicy_Translation_DE from "../translations/pages/legal/privacy-and-security-policy/06.de-DE.privacy-and-security-policy";
+
 export default defineI18nLocale(async (locale) => {
-  const navMenu = {
-    home: "Startseite",
-
-    cfds: "CFDs",
-    forex: "Forex",
-    shares: "Aktien",
-    commodities: "Rohstoffe",
-    indices: "Indizes",
-    cryptocurrencies: "Kryptowährungen",
-    etfs: "ETFs",
-
-    investing: "Investieren",
-    realShares: "Echte Aktien",
-
-    tradingCenter: "Handelszentrum",
-    tradingInfo: "Handelsinformationen",
-    tradingConditions: "Handelsbedingungen",
-    accounts: "Konten",
-    professionalAccounts: "Professionelle Konten",
-    islamicAccounts: "Islamische Konten",
-    faq: "FAQ",
-    educationDivider: "Bildung",
-    basicCourse: "Grundkurs",
-    inDepthCourses: "Vertiefungskurse",
-    eBook: "E-Book",
-    glossary: "Glossar",
-    webminars: "Webinare",
-
-    tools: "Werkzeuge",
-    digitalIdentityVerification: "Digitale Identitätsprüfung",
-    mt4: "MT4",
-    tradingCentralDivider: "Trading Central",
-    tradingCentral: "Trading Central",
-    marketAnalysisDivider: "Marktanalyse",
-    marginCalculatorTool: "Marge-Rechner-Tool",
-    economicCalendar: "Wirtschaftskalender",
-    news: "Nachrichten",
-    signals: "Signale",
-
-    company: "Unternehmen",
-    aboutUs: "Über uns",
-    whyFxoro: "Warum FXORO",
-    affiliation: "Affiliate-Programm",
-    events: "Veranstaltungen",
-    contactUs: "Kontaktiere uns",
-    newsAndUpdates: "Nachrichten zu Finanzinstrumenten",
-    blog: "Blog",
-
-    legal: "Rechtliches",
-    privacyAndSecurityPolicy: "Datenschutz- und Sicherheitsrichtlinie",
-    termsOfUse: "Nutzungsbedingungen",
-    riskWarningNotice: "Risikohinweis",
-    regulations: "Regulierungen",
-    termsAndConditions: "Allgemeine Geschäftsbedingungen",
-    conflictOfInterest: "Interessenkonflikt",
-    supportingDocuments: "Unterlagen",
-    keyInformationDocumentKid: "Wesentliche Anlegerinformationen (KIDs)",
+  return {
+    navigation: {
+      ...navigation_DE(),
+    },
+    header: {
+      ...header_DE(),
+    },
+    footer: {
+      ...footer_DE(),
+    },
+    privacyAndSecurityPolicy: {
+      ...privacyAndSecurityPolicy_Translation_DE(),
+    },
   };
-
-  const output = {
-    ...navMenu,
-  };
-
-  return output;
 });

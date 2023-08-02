@@ -1,66 +1,23 @@
+import navigation_FI from "../translations/navigation/10.fi-FI.navigation";
+
+import header_FI from "../translations/header/10.fi-FI.header";
+import footer_FI from "../translations/footer/10.fi-FI.footer";
+
+import privacyAndSecurityPolicy_Translation_FI from "../translations/pages/legal/privacy-and-security-policy/10.fi-FI.privacy-and-security-policy";
+
 export default defineI18nLocale(async (locale) => {
-  const navMenu = {
-    home: "Koti",
-
-    cfds: "CFD:t",
-    forex: "Forex",
-    shares: "Osakkeet",
-    commodities: "Hyödykkeet",
-    indices: "Indeksit",
-    cryptocurrencies: "Kryptovaluutat",
-    etfs: "ETF:t",
-
-    investing: "Sijoittaminen",
-    realShares: "Oikeat osakkeet",
-
-    tradingCenter: "Kauppakeskus",
-    tradingInfo: "Kaupankäyntitiedot",
-    tradingConditions: "Kaupankäyntiehdot",
-    accounts: "Tilit",
-    professionalAccounts: "Ammattilaisille",
-    islamicAccounts: "Islamilaiset tilit",
-    faq: "UKK",
-    educationDivider: "Koulutus",
-    basicCourse: "Peruskurssi",
-    inDepthCourses: "Syventävät kurssit",
-    eBook: "E-kirja",
-    glossary: "Sanasto",
-    webminars: "Webinaarit",
-
-    tools: "Työkalut",
-    digitalIdentityVerification: "Digitaalinen henkilöllisyyden varmennus",
-    mt4: "MT4",
-    tradingCentralDivider: "Kauppakeskus",
-    tradingCentral: "Kauppakeskus",
-    marketAnalysisDivider: "Markkina-analyysi",
-    marginCalculatorTool: "Vipuvaikutuslaskin",
-    economicCalendar: "Taloudellinen kalenteri",
-    news: "Uutiset",
-    signals: "Signaalit",
-
-    company: "Yritys",
-    aboutUs: "Tietoja meistä",
-    whyFxoro: "Miksi FXORO",
-    affiliation: "Kumppanuus",
-    events: "Tapahtumat",
-    contactUs: "Ota yhteyttä",
-    newsAndUpdates: "Uutisia rahoitusinstrumenteista",
-    blog: "Blogi",
-
-    legal: "Oikeudelliset",
-    privacyAndSecurityPolicy: "Tietosuoja ja tietoturvakäytäntö",
-    termsOfUse: "Käyttöehdot",
-    riskWarningNotice: "Riskien varoitus",
-    regulations: "Säädökset",
-    termsAndConditions: "Ehdot ja edellytykset",
-    conflictOfInterest: "Ristiriita etujen välillä",
-    supportingDocuments: "Tukiasiakirjat",
-    keyInformationDocumentKid: "Keskeisten tietojen asiakirjat (KID)",
+  return {
+    navigation: {
+      ...navigation_FI(),
+    },
+    header: {
+      ...header_FI(),
+    },
+    footer: {
+      ...footer_FI(),
+    },
+    privacyAndSecurityPolicy: {
+      ...privacyAndSecurityPolicy_Translation_FI(),
+    },
   };
-
-  const output = {
-    ...navMenu,
-  };
-
-  return output;
 });
