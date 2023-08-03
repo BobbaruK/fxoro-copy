@@ -162,17 +162,6 @@ useCheckLang();
   @import "./assets/scss/utilities/index";
 }
 
-// body {
-//   background-color: #fff;
-// }
-
-// html.dark-mode {
-//   body {
-//     background-color: black;
-//     color: white;
-//   }
-// }
-
 #__nuxt {
   display: grid;
   grid-template-rows: auto 1fr auto;

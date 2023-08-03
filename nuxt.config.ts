@@ -156,6 +156,6 @@ export default defineNuxtConfig({
     },
   },
   purgecss: {
-    // enabled: true, // Always enable purgecss
+    enabled: true, // Always enable purgecss
   },
 });
