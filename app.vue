@@ -1,11 +1,4 @@
 <script setup lang="ts">
-// TODO: make a composable
-const url = useRequestURL();
-const currentUrl = url.href; // https://example.com:3000/hello-world
-const protocol = url.protocol; // https:
-const host = url.host; // example.com:3000
-const hostname = url.hostname; // example.com
-const pathname = url.pathname; // /hello-world.
 
 useSeoMeta({
   title: "FXORO Copy",
@@ -25,101 +18,6 @@ useSeoMeta({
 
 useHead({
   link: [
-    {
-      rel: "icon",
-      type: "image/png",
-      href: "/favicon.ico",
-    },
-    {
-      rel: "preload",
-      href: `/images/logos/logo-white.png`,
-      as: "image",
-    },
-    // {
-    //   rel: "preload",
-    //   href: `/images/logos/logo-white.avif`,
-    //   as: "image",
-    // },
-    // {
-    //   rel: "preload",
-    //   href: `/images/logos/logo-white.webp`,
-    //   as: "image",
-    // },
-    {
-      rel: "preload",
-      href: `/images/flags/ar.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/de.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/en.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/es.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/fi.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/hu.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/it.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/ms.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/pl.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/pt.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/ro.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/sv.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/th.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/tr.svg`,
-      as: "image",
-    },
-    {
-      rel: "preload",
-      href: `/images/flags/vi.svg`,
-      as: "image",
-    },
   ],
 });
 

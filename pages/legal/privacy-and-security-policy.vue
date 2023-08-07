@@ -1,16 +1,12 @@
 <script setup lang="ts">
-// TODO: make a composable
-const url = useRequestURL();
-const currentUrl = url.href; // https://example.com:3000/hello-world
-const protocol = url.protocol; // https:
-const host = url.host; // example.com:3000
-const hostname = url.hostname; // example.com
-const pathname = url.pathname; // /hello-world.
+const reqURL = useGetDestructuredURL();
+
+// console.log(reqURL.href);
 
 useHead({
   link: [
-    { rel: "dns-prefetch", href: `${protocol}//${host}${pathname}` },
-    { rel: "preconnect", href: `${protocol}//${host}${pathname}` },
+    { rel: "dns-prefetch", href: `${reqURL.href}` },
+    { rel: "preconnect", href: `${reqURL.href}` },
   ],
 });
 /**
@@ -26,7 +22,7 @@ useSeoMeta({
   description: t("privacyAndSecurityPolicy.seo.metaDescription"),
   ogTitle: `${t("privacyAndSecurityPolicy.seo.metaTitle")} | FXORO`,
   ogDescription: t("privacyAndSecurityPolicy.seo.metaDescription"),
-  ogUrl: `${protocol}//${host}${pathname}`,
+  ogUrl: `${reqURL.href}`,
   twitterTitle: `${t("privacyAndSecurityPolicy.seo.metaTitle")} | FXORO`,
   twitterDescription: t("privacyAndSecurityPolicy.seo.metaDescription"),
 });
