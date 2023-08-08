@@ -256,6 +256,7 @@ export default defineNuxtConfig({
     },
   },
   purgecss: {
+    // TODO: maybe remove this bc it purge the hover styles
     // enabled: true, // Always enable purgecss
   },
 });

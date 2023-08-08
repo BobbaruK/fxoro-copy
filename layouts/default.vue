@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <NuxtLoadingIndicator :height="5" :color="'red'" :throttle="0" />
+    <NuxtLoadingIndicator :height="5" :color="'hsl(42, 100%, 50%)'" :throttle="0" />
     <SiteHeader />
     <main id="mainContent">
       <slot />

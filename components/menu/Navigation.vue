@@ -426,7 +426,6 @@ $menuBreakPoint: lg;
         }
         &:hover {
           color: var(--clr-brandSecondaryColor-400);
-          background-color: red;
         }
       }
       ul {
