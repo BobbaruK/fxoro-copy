@@ -22,12 +22,10 @@ useHead({
 useCheckLang();
 
 // TODO: work on page speed
+// TODO: reduce unused js in entry.*.js?
 </script>
 
 <template>
-  <div
-    style="width: 200px; height: 200px; inset: 0 auto auto 0; background: red"
-  ></div>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>

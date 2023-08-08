@@ -419,12 +419,14 @@ $menuBreakPoint: lg;
           padding: 0.5rem;
           flex-grow: 0;
         }
+        // TODO: nu sh de ce plm nu se vede stilu asta
         &.router-link-active,
         &.router-link-exact-active {
           font-weight: bold;
         }
         &:hover {
           color: var(--clr-brandSecondaryColor-400);
+          background-color: red;
         }
       }
       ul {

@@ -238,18 +238,6 @@ watchEffect(() => {
   }
   isMobile.value = true;
 });
-
-
-const nuxtApp = useNuxtApp();
-const loading = ref(true);
-// nuxtApp.hook("page:start", () => {
-//   console.log('start');
-//   loading.value = true;
-// });
-nuxtApp.hook("page:finish", () => {
-  console.log('end');
-  loading.value = false;
-});
 </script>
 
 <template>
@@ -272,7 +260,7 @@ nuxtApp.hook("page:finish", () => {
               />
             </NuxtLink>
             <!-- TODO put this on a service worker? -->
-            <ClientOnly v-if="!loading">
+            <ClientOnly>
               <template #fallback>
                 <div class="fallbackMsg">
                   <Loader :loader="'oval'" />
