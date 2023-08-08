@@ -238,6 +238,18 @@ watchEffect(() => {
   }
   isMobile.value = true;
 });
+
+
+const nuxtApp = useNuxtApp();
+const loading = ref(true);
+// nuxtApp.hook("page:start", () => {
+//   console.log('start');
+//   loading.value = true;
+// });
+nuxtApp.hook("page:finish", () => {
+  console.log('end');
+  loading.value = false;
+});
 </script>
 
 <template>
@@ -259,9 +271,9 @@ watchEffect(() => {
                 height="55"
               />
             </NuxtLink>
-            <ClientOnly>
+            <!-- TODO put this on a service worker? -->
+            <ClientOnly v-if="!loading">
               <template #fallback>
-                <!-- this will be rendered on server side -->
                 <div class="fallbackMsg">
                   <Loader :loader="'oval'" />
                   {{ t("header.misc.loadingUserActions") }}
@@ -289,9 +301,9 @@ watchEffect(() => {
 $menuBreakPoint: lg;
 
 header#header.siteHeader {
-  position: sticky;
-  inset: 0;
-  z-index: 10;
+  // position: sticky;
+  // inset: 0;
+  // z-index: 10;
   padding: 0;
 
   .siteHeader {

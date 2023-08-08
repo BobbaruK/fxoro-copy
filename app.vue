@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 useSeoMeta({
   title: "FXORO Copy",
   description:
@@ -17,8 +16,7 @@ useSeoMeta({
 });
 
 useHead({
-  link: [
-  ],
+  link: [],
 });
 
 useCheckLang();
@@ -27,6 +25,9 @@ useCheckLang();
 </script>
 
 <template>
+  <div
+    style="width: 200px; height: 200px; inset: 0 auto auto 0; background: red"
+  ></div>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
