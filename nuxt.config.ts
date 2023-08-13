@@ -118,6 +118,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
     "nuxt-purgecss",
+    "nuxt-delay-hydration",
   ],
   devtools: { enabled: true },
   // css: [ "~/assets/scss/main.scss"],
@@ -258,5 +259,10 @@ export default defineNuxtConfig({
   purgecss: {
     // TODO: maybe remove this bc it purge the hover styles
     // enabled: true, // Always enable purgecss
+  },
+  delayHydration: {
+    // enables nuxt-delay-hydration in dev mode for testing
+    debug: false,
+    mode: "mount",
   },
 });
