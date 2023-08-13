@@ -16,7 +16,17 @@ useSeoMeta({
 });
 
 useHead({
-  link: [],
+  link: [
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: "",
+    },
+  ],
 });
 
 useCheckLang();
@@ -40,23 +50,23 @@ useCheckLang();
 @layer utilities;
 
 @layer reset {
-  @import "./assets/scss/reset/index";
+  @import "./assets/scss/reset/";
 }
 
 @layer layout {
-  @import "./assets/scss/layout/index";
+  @import "./assets/scss/layout/";
 }
 
 @layer base {
-  @import "./assets/scss/base/index";
+  @import "./assets/scss/base/";
 }
 
 @layer components {
-  @import "./assets/scss/components/index";
+  @import "./assets/scss/components/";
 }
 
 @layer utilities {
-  @import "./assets/scss/utilities/index";
+  @import "./assets/scss/utilities/";
 }
 
 #__nuxt {

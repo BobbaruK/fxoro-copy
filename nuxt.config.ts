@@ -116,7 +116,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/supabase",
     "@nuxtjs/color-mode",
-    "@nuxtjs/google-fonts",
+    // "@nuxtjs/google-fonts",
     "nuxt-purgecss",
     "nuxt-delay-hydration",
   ],
@@ -246,23 +246,24 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: "lang",
   },
-  googleFonts: {
-    download: false,
-    preconnect: true,
-    display: "swap",
-    families: {
-      Montserrat: {
-        wght: [300, 400, 600, 700],
-      },
-    },
-  },
+  // googleFonts: {
+  //   download: false,
+  //   preconnect: true,
+  //   display: "swap",
+  //   families: {
+  //     Montserrat: {
+  //       wght: [300, 400, 600, 700],
+  //     },
+  //   },
+  // },
   purgecss: {
     // TODO: maybe remove this bc it purge the hover styles
     // enabled: true, // Always enable purgecss
   },
   delayHydration: {
     // enables nuxt-delay-hydration in dev mode for testing
-    debug: process.env.NODE_ENV === "development",
+    // debug: process.env.NODE_ENV === "development",
+    debug: false,
     mode: "init",
   },
 });

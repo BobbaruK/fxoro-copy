@@ -29,6 +29,7 @@ body {
   background-color: var(--clr-white);
   color: var(--clr-brandPrimaryColor-900);
   font-family: vars.$fontFamily;
+  font-display: swap;
   line-height: 1.5;
   #__nuxt {
     // overflow-x: hidden;
