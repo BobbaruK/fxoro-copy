@@ -28,81 +28,81 @@ export default defineNuxtConfig({
         //   as: "image",
         //   href: `/images/logos/logo-white.webp`,
         // },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/ar.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/de.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/en.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/es.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/fi.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/hu.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/it.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/ms.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/pl.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/pt.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/ro.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/sv.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/th.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/tr.svg`,
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: `/images/flags/vi.svg`,
-        },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/ar.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/de.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/en.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/es.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/fi.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/hu.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/it.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/ms.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/pl.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/pt.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/ro.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/sv.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/th.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/tr.svg`,
+        // },
+        // {
+        //   rel: "preload",
+        //   as: "image",
+        //   href: `/images/flags/vi.svg`,
+        // },
       ],
     },
     pageTransition: { name: "page", mode: "out-in" },
@@ -118,7 +118,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     // "@nuxtjs/google-fonts",
     "nuxt-purgecss",
-    "nuxt-delay-hydration",
+    // "nuxt-delay-hydration",
   ],
   devtools: { enabled: true },
   // css: [ "~/assets/scss/main.scss"],
@@ -260,10 +260,13 @@ export default defineNuxtConfig({
     // TODO: maybe remove this bc it purge the hover styles
     // enabled: true, // Always enable purgecss
   },
-  delayHydration: {
-    // enables nuxt-delay-hydration in dev mode for testing
-    debug: process.env.NODE_ENV === "development",
-    // debug: false,
-    mode: "mount",
+  // delayHydration: {
+  //   // enables nuxt-delay-hydration in dev mode for testing
+  //   debug: process.env.NODE_ENV === "development",
+  //   // debug: false,
+  //   mode: "manual",
+  // },
+  nitro: {
+    compressPublicAssets: true,
   },
 });
