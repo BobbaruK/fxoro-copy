@@ -269,4 +269,20 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
+  webpack: {
+    optimization: {
+      splitChunks: {
+        chunks: "all",
+        minSize: 15000,
+        maxSize: 250000,
+        maxAsyncRequests: 30,
+        maxInitialRequests: 30,
+        enforceSizeThreshold: 50000,
+      },
+    },
+  },
+  routeRules: {
+    // Homepage pre-rendered at build time
+    "/": { prerender: true },
+  },
 });
